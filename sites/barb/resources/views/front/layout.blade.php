@@ -14,13 +14,12 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     @yield('css')
 
-    <style>
-        .search-wrap .search-form::after {
-            content: "@lang('Press Enter to begin your search.')";
-        }
-    </style>
-    <!-- script
-    ================================================== -->
+    {{--<style>--}}
+        {{--.search-wrap .search-form::after {--}}
+            {{--content: "@lang('Press Enter to begin your search.')";--}}
+        {{--}--}}
+    {{--</style>--}}
+    <!-- script ================================================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
 </head>
@@ -88,8 +87,7 @@
 {{--<div id="preloader">--}}
 {{--<div id="loader"></div>--}}
 {{--</div>--}}
-<!-- Java Script
-   ================================================== -->
+<!-- Java Script ================================================== -->
     <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
