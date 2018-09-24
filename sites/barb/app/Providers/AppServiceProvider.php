@@ -25,10 +25,10 @@ class AppServiceProvider extends ServiceProvider
 		 Blade::if('admin', function () {
 			 return auth()->user()->role === 'admin';
 		 });
-
-		 Blade::if('redac', function () {
-			 return auth()->user()->role === 'redac';
-		 });
+//removed this auth level for now
+//		 Blade::if('redac', function () {
+//			 return auth()->user()->role === 'redac';
+//		 });
 
 		 Blade::if('request', function ($url) {
 			 return request()->is($url);
